@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 
 function Signup() {
-  const { register, handleSubmit, formState:{errors} } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
 
   return (
@@ -33,12 +33,16 @@ function Signup() {
       />
       {errors.email && <span>Campo obrigatório</span>}
 
-      <input placeholder="Digite sua senha"
+      <input
+        type="password"
+        placeholder="Digite sua senha"
         {...register("password", { required: true })}
       />
       {errors.password && <span>Campo obrigatório</span>}
 
-      <input placeholder="repita sua senha"
+      <input
+        type="password"
+        placeholder="repita sua senha"
         {...register("password", { required: true })}
       />
       {errors.password && <span>Campo obrigatório</span>}

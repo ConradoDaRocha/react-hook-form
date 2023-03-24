@@ -7,7 +7,6 @@ function Signup() {
   return (
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
       <h3>Inscreva-se</h3>
-
       <input
         placeholder="Digite seu nome"
         {...register("firstName", { required: true })}
@@ -28,7 +27,9 @@ function Signup() {
       </select>
       {errors.gender && <span>Campo obrigatório</span>}
 
-      <input placeholder="Digite seu email"
+      <input
+        type="email"
+        placeholder="Digite seu email"
         {...register("email", { required: true })}
       />
       {errors.email && <span>Campo obrigatório</span>}

@@ -1,5 +1,5 @@
-### Validação de formulário.
-Usando a ferramenta React-Hook-Form.
+### Form validation.
+Using the React-Hook-Form.
 
 Deploy: https://examplereacthookform.netlify.app/
 
